@@ -1,0 +1,55 @@
+{
+  "name": "@pittica/gatsby-plugin-video",
+  "private": false,
+  "description": "Video embed plugin for GatsbyJS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lucio Benini",
+    "email": "info@pittica.com",
+    "url": "https://pittica.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pittica/gatsby-plugin-video/issues"
+  },
+  "deprecated": false,
+  "homepage": "https://github.com/pittica/gatsby-plugin-video",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "video"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "babel-preset-gatsby-package": "^2.0.0",
+    "react-scripts": "^4.0.3"
+  },
+  "peerDependencies": {
+    "gatsby": "^3.0.0 || ^4.0.0"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pittica/gatsby-plugin-video.git"
+  },
+  "config": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "react-scripts test",
+    "prepare": "rimraf ./dist && mkdirp ./dist && babel src --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-gatsby-package"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
